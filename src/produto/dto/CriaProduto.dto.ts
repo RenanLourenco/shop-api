@@ -48,8 +48,8 @@ export class CriaProdutoDTO {
   @Min(1, { message: 'O valor precisa ser maior que zero' })
   valor: number;
 
-  @IsNumber()
-  @Min(0, { message: 'Quantidade mínima inválida' })
+    @IsNumber()
+    @Min(0, { message: 'Quantidade mínima inválida' })
   quantidadeDisponivel: number;
 
   @IsString()
